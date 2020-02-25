@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+}
+
+/* bike strat */
+#front-wheel, #right-wheel{
+    animation: wheel 2s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@keyframes wheel{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+#man{
+    animation: bike 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+}
+#hat{
+    animation: hat 1s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@keyframes hat{
+    from{
+        transform: translateY(0%);
+    }
+    to{
+        transform: translateY(50%);
+    }
+}
+@keyframes bike{
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(20deg);
+    }
+}
+
+@keyframes wheel{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+/* Loveontus start */
+#obj1{
+    animation: obj1 1s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@keyframes obj1{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(20%);
+    }
+}
+#obj2{
+    animation: obj2 1s ease-in-out infinite alternate;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@keyframes obj2{
+    from{
+        transform: translateX(20%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+#love{
+    animation: love 5s ease-in-out infinite alternate;
+}
+@keyframes love{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(35%) translateY(20%);
+    }
+}
